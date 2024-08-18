@@ -6,31 +6,28 @@
 	<link rel="stylesheet" href="styles.css">
 	<style>
 		/* Apply styles to the container element */
+
 #container {
-    margin: 20px;
-    position: relative; /* Ensures that the pseudo-elements are positioned relative to the container */
-    padding: 20px; /* Optional: Adds some padding to the container content */
-    border: 1px solid #ddd; /* Optional: Adds a border to visualize the container */
+	margin: 20px;
+	position:relative;
 }
 
-/* Insert content before the container */
-#container::before {
-    content: "Special Text Before ";
-    color: #f00; /* Red color */
-    font-size: 20px; /* Font size of 20px */
-    position: absolute; /* Positioning for absolute placement */
-    left: -100px; /* Adjust the position as needed */
-    top: 0; /* Align with the top of the container */
+#container::Before {
+	content: "Before Element";
+	color: #f00;
+	font-size: 20px;
+	position: absolute;
+	top: -25px;
+	left: 0;
 }
 
-/* Insert content after the container */
 #container::after {
-    content: " Special Text After";
-    color: #f00; /* Red color */
-    font-size: 20px; /* Font size of 20px */
-    position: absolute; /* Positioning for absolute placement */
-    right: -100px; /* Adjust the position as needed */
-    top: 0; /* Align with the top of the container */
+	content: "After Element";
+	color: #f00;
+	font-size: 20px;
+	position: absolute;
+	bottom: -25px;
+	right: 0;
 }
 
 	</style>
